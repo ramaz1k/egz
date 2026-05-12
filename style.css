@@ -420,3 +420,302 @@
     font-size: 16px;
   }
 }
+
+
+
+.markets {
+  padding: 100px 0;
+  background-color: #f9fbfd;
+}
+
+.markets__title {
+  font-size: 36px;
+  color: #0076a4;
+  font-weight: 700;
+  margin-bottom: 60px;
+  text-align: center;
+}
+
+.markets__grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+}
+
+.markets__item {
+  display: flex;
+  align-items: flex-start;
+  gap: 25px;
+  background: #fff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 118, 164, 0.05);
+  transition: transform 0.3s ease;
+}
+
+.markets__item:hover {
+  transform: translateY(-5px);
+}
+
+.markets__icon {
+  flex-shrink: 0;
+  width: 60px;
+  height: 60px;
+  background: #eef7f6;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.markets__icon img {
+  width: 32px;
+  height: 32px;
+}
+
+.markets__item-title {
+  font-size: 22px;
+  color: #333;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+.markets__text {
+  font-size: 16px;
+  color: #666;
+  line-height: 1.6;
+}
+
+/* --- Mobile Adaptive (510px) --- */
+@media (max-width: 510px) {
+  .markets {
+    padding: 60px 0;
+  }
+
+  .markets__title {
+    font-size: 28px;
+    margin-bottom: 40px;
+    padding: 0 10px;
+  }
+
+  .markets__grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .markets__item {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 25px 20px;
+  }
+
+  .markets__icon {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+  }
+
+  .markets__item-title {
+    font-size: 20px;
+  }
+
+  .markets__text {
+    font-size: 15px;
+  }
+}
+
+
+
+
+.ffoi-section {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 60px 20px;
+    font-family: sans-serif;
+    color: #333;
+}
+
+.qwxw-title {
+    text-align: center;
+    color: #1a7ab1;
+    font-size: 32px;
+    margin-bottom: 40px;
+}
+
+.zuz-tabs {
+    display: flex;
+    background: #f0f2f5;
+    border-radius: 8px;
+    overflow: hidden;
+    margin-bottom: 50px;
+}
+
+.zuz-item {
+    flex: 1;
+    padding: 20px;
+    text-align: center;
+    cursor: pointer;
+    color: #666;
+}
+
+.zuz-item.active {
+    background: #8abed9;
+    color: white;
+}
+
+.p00p-container {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    gap: 40px;
+}
+
+.mumu-map {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url('path-to-map-placeholder.png') no-repeat center;
+    background-size: contain;
+    opacity: 0.1;
+    z-index: -1;
+}
+
+.brbr-info {
+    flex: 1;
+}
+
+.klac-subtitle {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.klac-accent {
+    color: #10b981;
+}
+
+.txt-list {
+    line-height: 1.6;
+    max-width: 350px;
+    margin-bottom: 30px;
+}
+
+.btn-go {
+    display: inline-block;
+    padding: 15px 40px;
+    background: linear-gradient(to right, #6ab8e2, #1a7ab1);
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    margin-bottom: 40px;
+}
+
+.hrhr-manager {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.hrhr-photo {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: #ddd; /* Заглушка под фото Фатимы */
+}
+
+.hrhr-desc strong {
+    display: block;
+}
+
+.hrhr-desc span {
+    font-size: 14px;
+    color: #888;
+}
+
+.grid-shmid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    flex: 1;
+}
+
+.card-waw, .card-blue {
+    background: white;
+    padding: 30px 20px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+}
+
+.card-blue {
+    background: #1a7ab1;
+    color: white;
+}
+
+.card-val {
+    font-size: 36px;
+    font-weight: bold;
+    color: #8abed9;
+    margin-bottom: 10px;
+}
+
+.card-sub {
+    font-size: 14px;
+    color: #777;
+}
+
+.card-blue .card-sub {
+    color: white;
+}
+
+.icon-down {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+/* АДАПТИВ ПОД 510px */
+@media (max-width: 510px) {
+    .zuz-tabs {
+        flex-wrap: wrap;
+    }
+    
+    .zuz-item {
+        flex: none;
+        width: 50%;
+        font-size: 12px;
+        padding: 15px 5px;
+        border: 1px solid #e2e8f0;
+    }
+
+    .p00p-container {
+        flex-direction: column;
+    }
+
+    .brbr-info {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .btn-go {
+        order: 10; /* Кнопка уходит в самый низ */
+        text-align: center;
+        margin-top: 30px;
+    }
+
+    .grid-shmid {
+        grid-template-columns: 1fr; /* Карточки в одну колонку на мобилке */
+    }
+
+    .qwxw-title {
+        font-size: 24px;
+    }
+    
+    .txt-list {
+        max-width: 100%;
+    }
+}
+
+
+
+
