@@ -1,0 +1,187 @@
+*{
+    margin: auto;
+    font-family: sans-serif;
+}
+/* Базовые стили для контейнера */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.hero {
+  position: relative;
+  min-height: 700px;
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), 
+              url(/uae-4-2048x1367\ 2.png) no-repeat center/cover;
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+  font-family: sans-serif; /* Замени на шрифт из проекта */
+}
+
+/* Header */
+.header {
+  padding: 30px 0;
+}
+
+.header__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header__menu {
+  display: flex;
+  list-style: none;
+  gap: 30px;
+  margin: 0;
+  padding: 0;
+}
+
+.header__link {
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+  transition: opacity 0.3s;
+}
+
+.header__link:hover {
+  opacity: 0.7;
+}
+
+.header__actions {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.header__burger {
+  display: none;
+  width: 40px;
+  height: 40px;
+  background: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  padding: 10px;
+}
+
+/* Buttons */
+.btn {
+  display: inline-block;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: 500;
+  transition: transform 0.2s;
+}
+
+.btn:active {
+  transform: scale(0.98);
+}
+
+.btn--login {
+  background: #00b395;
+  color: #fff;
+  padding: 12px 35px;
+}
+
+.btn--primary {
+  background: linear-gradient(180deg, #4facfe 0%, #0082c8 100%);
+  color: #fff;
+  padding: 18px 45px;
+  font-size: 18px;
+}
+
+/* Hero Content */
+.hero__container {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  padding-bottom: 100px;
+}
+
+.hero__title {
+  font-size: 48px;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 1.2;
+  margin-bottom: 25px;
+}
+
+.hero__title-badge {
+  display: inline-block;
+  background: #00b395;
+  padding: 5px 15px;
+  margin: 5px 0;
+}
+
+.hero__subtitle {
+  font-size: 24px;
+  margin-bottom: 40px;
+  opacity: 0.9;
+}
+
+.hero__date-label {
+  display: none; /* Видно только на мобилке по макету */
+}
+
+/* --- Адаптив 510px --- */
+@media (max-width: 510px) {
+  .hero {
+    min-height: 100vh;
+    text-align: center;
+  }
+
+  .header__nav {
+    display: none; /* Скрываем меню для бургера */
+  }
+
+  .header__burger {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+
+  .header__burger span {
+    display: block;
+    width: 100%;
+    height: 2px;
+    background: #00b395;
+  }
+
+  .hero__title {
+    font-size: 28px;
+  }
+
+  .hero__title-badge {
+    display: block;
+    width: fit-content;
+    margin: 10px auto;
+  }
+
+  .hero__subtitle {
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .hero__date-label {
+    display: inline-block;
+    background: #fff;
+    color: #00b395;
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-weight: bold;
+  }
+
+  .btn--primary {
+    width: 90%;
+    padding: 15px;
+  }
+
+  
+
+  }
