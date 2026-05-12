@@ -13,7 +13,7 @@
   position: relative;
   min-height: 700px;
   background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), 
-              url(/uae-4-2048x1367\ 2.png) no-repeat center/cover;
+              url(./uae-4-2048x1367\ 2.png) no-repeat center/cover;
   display: flex;
   flex-direction: column;
   color: #fff;
@@ -326,5 +326,97 @@
 
   .target__card {
     padding: 30px 20px;
+  }
+}
+
+
+
+.cta {
+  position: relative;
+  padding: 60px 0;
+  /* Заглушка для фонового изображения [cite: 8, 18] */
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), 
+              url(./Group\ 757.png) no-repeat center/cover;
+  color: #fff;
+  text-align: center;
+}
+
+.cta__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cta__content {
+  max-width: 950px;
+}
+
+.cta__title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+  margin-bottom: 30px;
+}
+
+.cta__title-box {
+  background-color: #00b395; /* Фирменный бирюзовый [cite: 9] */
+  padding: 10px 20px;
+  font-size: 32px;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 1.2;
+}
+
+.cta__description {
+  font-size: 20px;
+  line-height: 1.5;
+  margin-bottom: 40px;
+  font-weight: 400;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Кнопка наследует базовые стили из предыдущих секций [cite: 4] */
+.cta__btn {
+  font-size: 18px;
+  padding: 20px 40px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* --- Адаптив 510px --- */
+@media (max-width: 510px) {
+  .cta {
+    padding: 60px 0;
+    /* На мобилке фон часто требует большего затемнения для читаемости текста [cite: 6] */
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), 
+                url(./Group\ 757.png) no-repeat center/cover;
+  }
+
+  .cta__title-box {
+    font-size: 18px; /* Значительное уменьшение шрифта для мобилки  */
+    padding: 8px 12px;
+    display: inline; /* Позволяет плашке "обтекать" текст построчно как на макете */
+    line-height: 1.8;
+    box-decoration-break: clone;
+    -webkit-box-decoration-break: clone;
+  }
+  
+  .cta__title {
+    display: block; /* Для корректного отображения inline-плашек */
+    margin-bottom: 25px;
+  }
+
+  .cta__description {
+    font-size: 16px;
+    padding: 0 10px;
+    margin-bottom: 30px;
+  }
+
+  .cta__btn {
+    width: 90%;
+    padding: 15px;
+    font-size: 16px;
   }
 }
