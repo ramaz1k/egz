@@ -184,4 +184,147 @@
 
   
 
+
+
+
   }
+  /* Общие стили для кнопок и заголовков */
+.services__main-title, .target__main-title {
+  font-size: 32px;
+  color: #0076a4;
+  margin-bottom: 60px;
+  font-weight: 700;
+}
+
+.btn--secondary {
+  background-color: #00b395;
+  color: #fff;
+  padding: 15px 30px;
+  text-decoration: none;
+  border-radius: 6px;
+  display: inline-block;
+  font-weight: 500;
+}
+
+/* Секция Услуги */
+.services {
+  padding: 80px 0;
+}
+
+.services__item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px;
+  margin-bottom: 100px;
+}
+
+.services__item--reverse {
+  flex-direction: row-reverse;
+}
+
+.services__content {
+  flex: 0 1 50%;
+}
+
+.services__title {
+  color: #0076a4;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.services__text {
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: 30px;
+  font-size: 16px;
+}
+
+.services__image {
+  flex: 0 1 45%;
+  text-align: center;
+}
+
+.services__image img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Секция Для кого мы? */
+.target {
+  padding: 80px 0;
+  background-color: #f9f9f9;
+}
+
+.target__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.target__card {
+  background: #fff;
+  padding: 40px 30px;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+  text-align: center;
+}
+
+.target__number {
+  font-size: 64px;
+  font-weight: 800;
+  color: #a1c4fd; /* Светло-голубой по макету */
+  margin-bottom: 20px;
+  line-height: 1;
+}
+
+.target__title {
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 15px;
+  min-height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.target__text {
+  font-size: 14px;
+  color: #777;
+  line-height: 1.5;
+}
+
+/* --- Mobile Adaptive (510px) --- */
+@media (max-width: 510px) {
+  .services__main-title, .target__main-title {
+    text-align: center;
+    font-size: 26px;
+    margin-bottom: 40px;
+  }
+
+  .services__item, .services__item--reverse {
+    flex-direction: column;
+    text-align: center;
+    gap: 30px;
+    margin-bottom: 60px;
+  }
+
+  .services__content {
+    flex: 1 1 100%;
+    order: 2;
+  }
+
+  .services__image {
+    flex: 1 1 100%;
+    order: 1;
+  }
+
+  .target__grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .target__card {
+    padding: 30px 20px;
+  }
+}
