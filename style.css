@@ -1658,6 +1658,133 @@
     }
 
     .ramazz-parovoz-iz-fotok {
-        grid-template-columns: repeat(2, 1fr); /* На мобилке по 2 в ряд */
+        grid-template-columns: repeat(1, 1fr); /* На мобилке по 2 в ряд */
+        flex-wrap: wrap;
+    }
+}
+
+
+
+
+
+/* Общие стили секций [cite: 18, 19, 23, 24] */
+.ramazz-sobranie-mudrecov, .ramazz-shodka-korporaciy {
+    padding: 80px 20px;
+    font-family: 'Arial', sans-serif;
+    background: #fff;
+    text-align: center;
+}
+
+.ramazz-ograzhdenie-dlya-lyudey {
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.ramazz-krichashiy-titul {
+    color: #0077b6;
+    font-size: 32px;
+    margin-bottom: 50px;
+    font-weight: 700;
+}
+
+/* Эксперты [cite: 20, 24] */
+.ramazz-karusel-s-golovami {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.ramazz-spisok-lic {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+}
+
+.ramazz-kruglaya-lichnost {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ramazz-myasistiy-portret {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+    border: 8px solid #eef7fd;
+}
+
+.ramazz-imya-iz-pasporta {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.ramazz-skazka-pro-market-fit {
+    font-size: 14px;
+    color: #666;
+    line-height: 1.4;
+    max-width: 200px;
+}
+
+/* Кнопки пагинации */
+.ramazz-strelka-vlevo, .ramazz-strelka-vpravo {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: none;
+    background: #0077b6;
+    color: white;
+    cursor: pointer;
+}
+
+/* Партнеры [cite: 24] */
+.ramazz-stoya-na-polkah {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.ramazz-kvadrat-s-logotipom {
+    background: #fcfcfc;
+    border-radius: 12px;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.03);
+}
+
+.ramazz-kvadrat-s-logotipom img {
+    max-width: 100%;
+    filter: grayscale(1);
+    opacity: 0.7;
+    transition: 0.3s;
+}
+
+.ramazz-kvadrat-s-logotipom:hover img {
+    filter: grayscale(0);
+    opacity: 1;
+}
+
+/* Адаптивность 510px [cite: 20, 25] */
+@media (max-width: 510px) {
+    .ramazz-spisok-lic {
+        grid-template-columns: 1fr;
+    }
+    
+    .ramazz-stoya-na-polkah {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .ramazz-strelka-vlevo, .ramazz-strelka-vpravo {
+        display: none; /* Скрываем стрелки на мобилке для упрощения */
+    }
+    
+    .ramazz-krichashiy-titul {
+        font-size: 24px;
     }
 }
