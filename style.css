@@ -1788,3 +1788,86 @@
         font-size: 24px;
     }
 }
+
+
+
+/* Десктопная версия */
+.ramaz1-shokoladniy-glaz {
+  position: relative;
+  width: 100%;
+  min-height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 20px;
+  box-sizing: border-box;
+  /* Фоновое изображение с затемнением */
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), 
+              url(./Rectangle\ 1992.png) center/cover no-repeat; [cite: 38]
+  text-align: center;
+  color: #ffffff;
+  font-family: sans-serif; /* Замени на нужный шрифт проекта */
+}
+
+.ramaz1-shokoladniy-glaz__pelmen-container {
+  max-width: 900px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px; [cite: 9]
+}
+
+.ramaz1-shokoladniy-glaz__gigantskiy-vopros {
+  font-size: 42px;
+  font-weight: 700;
+  line-height: 1.2;
+  margin: 0;
+  text-transform: none;
+}
+
+.ramaz1-shokoladniy-glaz__skolzkaya-kolbasa {
+  font-size: 18px;
+  line-height: 1.5;
+  max-width: 700px;
+  margin: 0;
+  opacity: 0.9;
+}
+
+.ramaz1-shokoladniy-glaz__sinniy-tapochek {
+  display: inline-block;
+  background: linear-gradient(90deg, #5eb5e2 0%, #1a7fb3 100%);
+  color: #ffffff;
+  padding: 16px 40px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 18px;
+  transition: transform 0.2s ease;
+}
+
+.ramaz1-shokoladniy-glaz__sinniy-tapochek:hover {
+  transform: scale(1.05);
+}
+
+/* Мобильная версия (510px) */
+@media (max-width: 510px) { [cite: 6, 16]
+  .ramaz1-shokoladniy-glaz {
+    min-height: 100vh; /* На мобилке часто на весь экран */
+    padding: 40px 15px;
+  }
+
+  .ramaz1-shokoladniy-glaz__gigantskiy-vopros {
+    font-size: 28px;
+  }
+
+  .ramaz1-shokoladniy-glaz__skolzkaya-kolbasa {
+    font-size: 16px;
+  }
+
+  .ramaz1-shokoladniy-glaz__sinniy-tapochek {
+    width: 100%;
+    max-width: 320px;
+    box-sizing: border-box;
+    text-align: center;
+  }
+}
