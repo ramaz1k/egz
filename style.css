@@ -1135,3 +1135,116 @@
       display: block; /* Показываем стрелку у Демо дня на мобилке, как на скрине */
   }
 }
+
+
+.rama-blue-ocean {
+  background-color: #4A90E2; /* Основной синий */
+  background-image: url(./Group\ 796.png); /* Здесь должна быть фоновая иконка-паттерн */
+  background-size: cover;
+  padding: 80px 20px;
+  color: white;
+  font-family: 'Inter', sans-serif;
+  overflow: hidden;
+}
+
+.rama-container-shpainer {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.rama-lefty-p00f {
+  flex: 1;
+  max-width: 500px;
+}
+
+.rama-hader-glader {
+  font-size: 36px;
+  line-height: 1.2;
+  font-weight: 700;
+  margin-bottom: 24px;
+}
+
+.rama-subtitle-shmitle {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 32px;
+  opacity: 0.9;
+}
+
+.rama-button-vzhuh {
+  display: inline-block;
+  background-color: #00B894; /* Тот самый зеленый */
+  color: white;
+  text-decoration: none;
+  padding: 18px 32px;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.rama-button-vzhuh:hover {
+  background-color: #00997a;
+  transform: scale(1.05);
+}
+
+.rama-logos-grid-pizazz {
+  flex: 1;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+}
+
+.rama-logo-card-boom {
+  background: white;
+  border-radius: 10px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}
+
+.rama-img-placeholder {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  /* Для верстки без картинок */
+  filter: grayscale(1); 
+}
+
+/* Адаптив под 510px */
+@media (max-width: 510px) {
+  .rama-container-shpainer {
+    flex-direction: column;
+    text-align: center;
+    gap: 30px;
+  }
+
+  .rama-lefty-p00f {
+    max-width: 100%;
+  }
+
+  .rama-hader-glader {
+    font-size: 24px;
+  }
+
+  .rama-button-vzhuh {
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+  }
+
+  .rama-logos-grid-pizazz {
+    width: 100%;
+    grid-template-columns: repeat(2, 1fr); /* На мобилке на скрине тоже 2 колонки */
+    gap: 10px;
+  }
+  
+  .rama-logo-card-boom {
+    height: 70px;
+  }
+}
