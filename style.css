@@ -1497,3 +1497,167 @@
         padding: 20px;
     }
 }
+
+
+
+.ramazz-mnogolikaya-biografiya {
+    padding: 100px 20px;
+    background-color: #fff;
+    font-family: 'Inter', sans-serif;
+}
+
+.ramazz-meshok-s-faktami {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.ramazz-voprositelniy-vzglyad {
+    color: #0077b6;
+    font-size: 32px;
+    margin-bottom: 40px;
+    text-align: left;
+}
+
+.ramazz-dvoynoy-udar-kontenta {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    margin-bottom: 80px;
+}
+
+.ramazz-kartinochnaya-gallyucinaciya {
+    flex: 1;
+}
+
+.ramazz-pustaya-ramka-interfeysa {
+    width: 100%;
+    aspect-ratio: 16 / 10;
+    background: #f0f5f9;
+    border-radius: 20px;
+}
+
+.ramazz-tekstoviy-shpinat {
+    flex: 1;
+}
+
+.ramazz-sinniy-akcent {
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.ramazz-sinniy-akcent strong {
+    color: #0077b6;
+}
+
+.ramazz-vtorichnaya-pulpа {
+    font-size: 16px;
+    color: #666;
+    line-height: 1.6;
+}
+
+/* Карточка шефа */
+.ramazz-odinokiy-boss-v-kvadrate {
+    background: #fff;
+    box-shadow: 0 20px 50px rgba(0,0,0,0.05);
+    border-radius: 24px;
+    padding: 50px;
+    margin-bottom: 80px;
+}
+
+.ramazz-telo-kartochki-shefa {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+}
+
+.ramazz-krutlyash-s-portretom {
+    flex-shrink: 0;
+    width: 300px;
+}
+
+.ramazz-golaya-fotografiya-bossa {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    background: #e0e0e0;
+    border-radius: 50% 50% 0 50%; /* Скругление как на макете */
+}
+
+.ramazz-pismennaya-ispoved {
+    font-size: 15px;
+    line-height: 1.7;
+    color: #444;
+}
+
+.ramazz-privetstvenniy-vosklik {
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.ramazz-podpis-velikogo {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.ramazz-imya-geroya {
+    font-weight: 700;
+    color: #333;
+}
+
+.ramazz-dolzhnost-v-tumane {
+    color: #999;
+    font-size: 13px;
+}
+
+/* Галерея */
+.ramazz-parovoz-iz-fotok {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 15px;
+}
+
+.ramazz-vagonchik-kartinki {
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    background: #ddd;
+    border-radius: 12px;
+}
+
+/* Мобильная адаптация 510px */
+@media (max-width: 510px) {
+    .ramazz-mnogolikaya-biografiya {
+        padding: 50px 15px;
+    }
+
+    .ramazz-voprositelniy-vzglyad {
+        text-align: center;
+        font-size: 28px;
+    }
+
+    .ramazz-dvoynoy-udar-kontenta {
+        flex-direction: column;
+        gap: 30px;
+        text-align: center;
+    }
+
+    .ramazz-odinokiy-boss-v-kvadrate {
+        padding: 30px 20px;
+    }
+
+    .ramazz-telo-kartochki-shefa {
+        flex-direction: column;
+        text-align: left;
+    }
+
+    .ramazz-krutlyash-s-portretom {
+        width: 100%;
+        max-width: 250px;
+        margin: 0 auto;
+    }
+
+    .ramazz-parovoz-iz-fotok {
+        grid-template-columns: repeat(2, 1fr); /* На мобилке по 2 в ряд */
+    }
+}
