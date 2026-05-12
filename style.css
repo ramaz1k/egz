@@ -873,3 +873,265 @@
         aspect-ratio: 1 / 1; /* Квадратное видео на мобилке как на скрине */
     }
 }
+
+
+
+.hru-hru {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 50px 20px;
+    font-family: 'Arial', sans-serif;
+    background-color: #fcfcfc;
+}
+
+.shlep-title {
+    color: #1a7ab1;
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 40px;
+}
+
+.boing-box {
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 5px 25px rgba(0,0,0,0.05);
+    overflow: hidden;
+    border: 1px solid #f0f0f0;
+}
+
+.tudu-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 30px;
+    cursor: pointer;
+}
+
+.tudu-main {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.tudu-blue {
+    color: #1a7ab1;
+    font-weight: 700;
+    white-space: nowrap;
+}
+
+.tudu-dur {
+    display: none; /* Скрыто на десктопе */
+    color: #555;
+}
+
+.tudu-text {
+    font-size: 18px;
+    font-weight: 500;
+    margin: 0;
+    color: #333;
+}
+
+.tudu-btn {
+    width: 36px;
+    height: 36px;
+    background-color: #3a86c8;
+    border: none;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.arrow-up {
+    width: 8px;
+    height: 8px;
+    border-left: 2px solid white;
+    border-top: 2px solid white;
+    transform: rotate(45deg);
+    margin-top: 4px;
+}
+
+.tudu-body {
+    border-top: 1px solid #f0f0f0;
+}
+
+.tudu-row {
+    padding: 20px 30px;
+    color: #777;
+    font-size: 14px;
+    border-bottom: 1px solid #f9f9f9;
+}
+
+.tudu-footer {
+    padding: 20px 30px;
+    color: #1a7ab1;
+    font-size: 14px;
+    background-color: #fafafa;
+}
+
+/* МОБИЛКА 510px */
+@media (max-width: 510px) {
+    .shlep-title {
+        font-size: 26px;
+        text-align: center;
+    }
+
+    .tudu-head {
+        flex-direction: column;
+        padding: 30px 20px;
+        text-align: center;
+    }
+
+    .tudu-main {
+        flex-direction: column;
+        gap: 10px;
+        margin-bottom: 20px;
+    }
+
+    .tudu-dur {
+        display: inline; /* Показываем длительность */
+    }
+
+    .tudu-text {
+        font-size: 16px;
+    }
+
+    .tudu-btn {
+        order: 3; /* Кнопка под текстом */
+    }
+
+    .tudu-row {
+        padding: 15px 20px;
+        text-align: left;
+    }
+
+    .tudu-footer {
+        text-align: left;
+        padding: 15px 20px;
+    }
+}
+
+
+
+.rama-bubble-gum {
+  padding: 50px 20px;
+  background-color: #f9f9f9;
+  font-family: sans-serif;
+}
+
+.rama-wrapper-shmapper {
+  max-width: 900px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.rama-karton-box {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 20px 30px;
+  display: flex;
+  width: 95%;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.rama-karton-box:hover {
+  transform: translateY(-2px);
+}
+
+.rama-text-p00f {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.rama-num-gluk {
+  color: #3182ce;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.rama-title-shmitle {
+  color: #2d3748;
+  font-size: 16px;
+  font-weight: 500;
+  margin: 0;
+}
+
+.rama-blue-pizazz {
+  color: #3182ce;
+  font-weight: 700;
+}
+
+.rama-arrow-vzhuh {
+  width: 32px;
+  height: 32px;
+  background-color: #3182ce;
+  border-radius: 50%;
+  position: relative;
+}
+
+/* Заглушка стрелочки через псевдоэлемент */
+.rama-arrow-vzhuh::after {
+  content: '';
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  width: 8px;
+  height: 8px;
+  border-right: 2px solid white;
+  border-bottom: 2px solid white;
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.rama-knopka-boom {
+  margin-top: 20px;
+  align-self: flex-start;
+  padding: 15px 30px;
+  background: linear-gradient(90deg, #63b3ed, #2b6cb0);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(43, 108, 176, 0.3);
+}
+
+/* Адаптив под 510px */
+@media (max-width: 510px) {
+  .rama-karton-box {
+    flex-direction: column;
+    text-align: center;
+    padding: 25px 15px;
+    gap: 15px;
+  }
+
+  .rama-text-p00f {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .rama-num-gluk {
+    font-size: 18px;
+  }
+
+  .rama-title-shmitle {
+    font-size: 15px;
+    line-height: 1.4;
+  }
+
+  .rama-knopka-boom {
+    align-self: center;
+    width: 100%;
+  }
+  
+  .rama-hide-on-desktop {
+      display: block; /* Показываем стрелку у Демо дня на мобилке, как на скрине */
+  }
+}
