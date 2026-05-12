@@ -1,6 +1,12 @@
 *{
-    margin: auto;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
     font-family: sans-serif;
+}
+body{
+    overflow-x: hidden;
+    width: 100%;
 }
 /* Базовые стили для контейнера */
 .container {
@@ -1530,11 +1536,11 @@
 }
 
 .ramazz-pustaya-ramka-interfeysa {
-    width: 100%;
-    aspect-ratio: 16 / 10;
+    width: 80%;
     background: #f0f5f9;
     border-radius: 20px;
 }
+
 
 .ramazz-tekstoviy-shpinat {
     flex: 1;
@@ -1631,10 +1637,15 @@
         padding: 50px 15px;
     }
 
+
+
+
     .ramazz-voprositelniy-vzglyad {
         text-align: center;
         font-size: 28px;
     }
+
+    
 
     .ramazz-dvoynoy-udar-kontenta {
         flex-direction: column;
@@ -2132,4 +2143,8 @@
     .ramaz11-whispering-grass {
         font-size: 12px;
     }
+
+
 }
+
+
