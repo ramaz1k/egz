@@ -719,3 +719,157 @@
 
 
 
+.bbbb-vrum {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 80px 20px;
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+}
+
+.oooo-shlep {
+    color: #1a7ab1;
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.kkkk-puk {
+    color: #666;
+    font-size: 14px;
+    line-height: 1.5;
+    max-width: 800px;
+    margin: 0 auto 50px;
+}
+
+.gggg-tudu {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 40px;
+}
+
+.zzzz-blop {
+    flex: 1;
+    background: #ffffff;
+    padding: 40px 20px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 200px;
+}
+
+.xxxx-icon {
+    font-size: 80px;
+    font-weight: 900;
+    color: #8abed9;
+    line-height: 1;
+    margin-bottom: 15px;
+}
+
+.xxxx-icon-img {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 15px;
+}
+
+.icon-stub {
+    width: 100%;
+    height: 100%;
+    background: #e2eff7;
+    border-radius: 50%;
+}
+
+.cccc-text {
+    font-size: 16px;
+    font-weight: 600;
+    color: #333;
+}
+
+.vvvv-yop {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    background: #0f0f0f;
+    border-radius: 12px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.mmmm-label {
+    color: white;
+    font-size: 16px;
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+
+.pppp-play {
+    width: 80px;
+    height: 80px;
+    background: #4a90e2;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.pppp-play:hover {
+    transform: scale(1.1);
+}
+
+.triangle-right {
+    width: 0;
+    height: 0;
+    border-top: 15px solid transparent;
+    border-left: 25px solid white;
+    border-bottom: 15px solid transparent;
+    margin-left: 5px;
+}
+
+/* АДАПТИВ 510px */
+@media (max-width: 510px) {
+    .oooo-shlep {
+        font-size: 22px;
+    }
+
+    .gggg-tudu {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .zzzz-blop {
+        flex-direction: row; /* На мобилке иконка и текст в ряд */
+        justify-content: flex-start;
+        padding: 20px 30px;
+        min-height: auto;
+        gap: 20px;
+    }
+
+    .xxxx-icon {
+        font-size: 50px;
+        margin-bottom: 0;
+    }
+
+    .xxxx-icon-img {
+        width: 60px;
+        height: 60px;
+        margin-bottom: 0;
+    }
+
+    .cccc-text {
+        text-align: left;
+        font-size: 14px;
+    }
+
+    .vvvv-yop {
+        aspect-ratio: 1 / 1; /* Квадратное видео на мобилке как на скрине */
+    }
+}
